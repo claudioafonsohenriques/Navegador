@@ -1,2 +1,2 @@
 # Navegador
- Navegador simples feito por mim com apenas um webBrowser
+ Navegador simples feito por mim
