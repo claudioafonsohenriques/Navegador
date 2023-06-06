@@ -47,19 +47,20 @@
             // 
             this.url_text.BackColor = System.Drawing.Color.DarkGray;
             this.url_text.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.url_text.FocusedLineColor = System.Drawing.Color.Silver;
+            this.url_text.FocusedLineColor = System.Drawing.Color.White;
             this.url_text.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.url_text.ForeColor = System.Drawing.SystemColors.Control;
-            this.url_text.LineColor = System.Drawing.Color.LightGray;
+            this.url_text.ForeColor = System.Drawing.Color.White;
+            this.url_text.LineColor = System.Drawing.Color.Silver;
             this.url_text.Location = new System.Drawing.Point(-8, 0);
             this.url_text.Name = "url_text";
             this.url_text.PasswordChar = '\0';
             this.url_text.SelectedText = "";
-            this.url_text.Size = new System.Drawing.Size(754, 36);
+            this.url_text.Size = new System.Drawing.Size(530, 35);
             this.url_text.TabIndex = 0;
             this.url_text.Text = "www.google.com.ao";
             this.url_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.url_text.TextOffsetX = 0;
+            this.url_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.url_text_KeyDown);
             // 
             // gunaGradientPanel1
             // 
@@ -76,13 +77,13 @@
             this.gunaGradientPanel1.Controls.Add(this.gunaLabel1);
             this.gunaGradientPanel1.Controls.Add(this.url_text);
             this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.Gray;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.DimGray;
             this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.GhostWhite;
             this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.LightCyan;
             this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(1370, 78);
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(1043, 42);
             this.gunaGradientPanel1.TabIndex = 1;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             this.gunaGradientPanel1.Click += new System.EventHandler(this.gunaGradientPanel1_Click);
@@ -105,9 +106,9 @@
             this.gunaAdvenceButton1.Image = null;
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(646, 37);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(1190, 0);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton1.OnHoverImage = null;
@@ -137,9 +138,9 @@
             this.btn_navegar.Image = null;
             this.btn_navegar.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_navegar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_navegar.Location = new System.Drawing.Point(646, 0);
+            this.btn_navegar.Location = new System.Drawing.Point(528, 0);
             this.btn_navegar.Name = "btn_navegar";
-            this.btn_navegar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_navegar.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btn_navegar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_navegar.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_navegar.OnHoverImage = null;
@@ -169,15 +170,15 @@
             this.btn_stop.Image = null;
             this.btn_stop.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_stop.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_stop.Location = new System.Drawing.Point(747, 0);
+            this.btn_stop.Location = new System.Drawing.Point(634, 0);
             this.btn_stop.Name = "btn_stop";
-            this.btn_stop.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_stop.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btn_stop.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_stop.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_stop.OnHoverImage = null;
             this.btn_stop.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_stop.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_stop.Size = new System.Drawing.Size(133, 35);
+            this.btn_stop.Size = new System.Drawing.Size(81, 35);
             this.btn_stop.TabIndex = 8;
             this.btn_stop.Text = "Parar";
             this.btn_stop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -201,9 +202,9 @@
             this.pg_inicial.Image = null;
             this.pg_inicial.ImageSize = new System.Drawing.Size(20, 20);
             this.pg_inicial.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.pg_inicial.Location = new System.Drawing.Point(1197, 0);
+            this.pg_inicial.Location = new System.Drawing.Point(1047, 0);
             this.pg_inicial.Name = "pg_inicial";
-            this.pg_inicial.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.pg_inicial.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.pg_inicial.OnHoverBorderColor = System.Drawing.Color.Black;
             this.pg_inicial.OnHoverForeColor = System.Drawing.Color.White;
             this.pg_inicial.OnHoverImage = null;
@@ -233,9 +234,9 @@
             this.btn_avancar.Image = null;
             this.btn_avancar.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_avancar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_avancar.Location = new System.Drawing.Point(1104, 0);
+            this.btn_avancar.Location = new System.Drawing.Point(954, 0);
             this.btn_avancar.Name = "btn_avancar";
-            this.btn_avancar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_avancar.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btn_avancar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_avancar.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_avancar.OnHoverImage = null;
@@ -265,9 +266,9 @@
             this.btn_voltar.Image = null;
             this.btn_voltar.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_voltar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_voltar.Location = new System.Drawing.Point(1015, 0);
+            this.btn_voltar.Location = new System.Drawing.Point(860, 0);
             this.btn_voltar.Name = "btn_voltar";
-            this.btn_voltar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_voltar.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btn_voltar.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_voltar.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_voltar.OnHoverImage = null;
@@ -297,9 +298,9 @@
             this.btn_refresh.Image = null;
             this.btn_refresh.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_refresh.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_refresh.Location = new System.Drawing.Point(881, 0);
+            this.btn_refresh.Location = new System.Drawing.Point(721, 0);
             this.btn_refresh.Name = "btn_refresh";
-            this.btn_refresh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_refresh.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btn_refresh.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_refresh.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_refresh.OnHoverImage = null;
@@ -323,10 +324,10 @@
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 78);
+            this.webBrowser1.Location = new System.Drawing.Point(0, 42);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(1370, 393);
+            this.webBrowser1.Size = new System.Drawing.Size(1043, 429);
             this.webBrowser1.TabIndex = 2;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
@@ -334,9 +335,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 471);
+            this.ClientSize = new System.Drawing.Size(1043, 471);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.gunaGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Frm_principal";
             this.Text = "Navegador";
             this.Load += new System.EventHandler(this.Frm_principal_Load);

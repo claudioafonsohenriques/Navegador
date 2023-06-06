@@ -78,7 +78,15 @@ namespace Navegador
 
         private void gunaGradientPanel1_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void url_text_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                navegar(url_text.Text);
+            }
         }
     }
 }
